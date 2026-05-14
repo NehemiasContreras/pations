@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Logo Hotel Boutique Moderno Minimalista Rojo Borgoña.png">
+    <title>Pations</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="sidebar">
+
+        <div class="logo">
+            <h1>Pations</h1>
+            <p>Feel the moment</p>
+        </div>
+
+        <nav>
+            <a href="#" class="menu active" data-page="inicio">Inicio</a>
+            <a href="#" class="menu" data-page="explorar">Explorar</a>
+            <a href="#" class="menu" data-page="biblioteca">Biblioteca</a>
+            <a href="#" class="menu" data-page="favoritos">Favoritos</a>
+            <a href="#" class="menu" data-page="perfil">Perfil</a>
+        </nav>
+
+    </div>
+
+    <main>
+
+        <header>
+            <input type="text" placeholder="Buscar artista o canción...">
+        </header>
+
+        <section class="hero">
+
+            <div class="overlay"></div>
+
+            <div class="hero-text">
+                <h2>Bienvenido a Pations</h2>
+                <p>Escucha música ilimitada.</p>
+
+                <button id="randomBtn">Música aleatoria</button>
+            </div>
+
+        </section>
+
+        <section class="songs">
+
+            <h3 id="sectionTitle">Recomendado</h3>
+
+            <div class="cards"></div>
+
+        </section>
+
+    </main>
+
+    <div class="player">
+
+        <div class="song-info">
+            <img id="playerCover" src="Logo Hotel Boutique Moderno Minimalista Rojo Borgoña.png">
+
+            <div>
+                <h4 id="playerTitle">Sin reproducción</h4>
+                <p id="playerArtist">Pations</p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prev">⏮</button>
+            <button id="play">▶</button>
+            <button id="next">⏭</button>
+        </div>
+
+        <div class="volume">
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+        </div>
+
+    </div>
+
+    <audio id="audio"></audio>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
